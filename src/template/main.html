@@ -1,3 +1,6 @@
-<h2 class="webapp-boilerplate-message"><%= message %></h2>
-
-<%= renderer.renderComponent('Name') %>
+<% _.map(menuTree, function(item) { %>
+    <div>
+        <p><%- item.displayName  %></p>
+        <p><%- item.URL %></p>   
+    </div> 
+<% }) %>

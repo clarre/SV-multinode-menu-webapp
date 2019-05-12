@@ -1,9 +1,9 @@
 {
-   "id": "myWebApp",
+   "id": "claes.rydell.menu",
    "version": "0.0.1",
    "name": "WebApp boilerplate",
-   "author": "SiteVision AB",
-   "description": "A WebApp boilerplate",
+   "author": "Claes Rydell",
+   "description": "Multilevel menu webapp",
    "helpUrl": "https://help.sitevision.se",
    "type": "WebApp"
 }

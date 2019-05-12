@@ -3,15 +3,16 @@
 
    var 
       router  = require('router'),
-      appData = require('appData');
+      appData = require('appData'),
+      nodeProvider = require('/module/server/nodeProvider');
 
    router.get('/', function(req, res) {
-      var message = 'Hello, world!',
-         name = appData.get('name');
+      var rootNode = appData.getNode('root');
+
+      var menuTree = nodeProvider.getTreeAsJSON(rootNode);
 
       res.render('/', {
-         message: message,
-         name: name
+         menuTree: menuTree
       });
    });
 }());

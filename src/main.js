@@ -11,7 +11,7 @@ define(function(require) {
       template: template,
 
       filterState: function(state) {
-         return _.extend({}, {message: state.message});
+         return _.extend({}, { menuTree: state.menuTree});
       }
    });
 });
